@@ -1,0 +1,14 @@
+#!/bin/sh -e
+/vagrant/Miniconda3-latest-Linux-x86_64.sh -b -p /home/vagrant/conda
+cd /home/vagrant && patch -p0 <EOF
+--- .bashrc.orig	2016-08-23 15:54:32.496000000 +0000
++++ .bashrc	2016-08-23 15:55:28.460000000 +0000
+@@ -111,3 +111,7 @@
+     . /etc/bash_completion
+   fi
+ fi
++
++PATH=/usr/local/bin:/usr/bin:/bin
++PATH="$HOME/conda/bin:$PATH"
++export PATH
+EOF

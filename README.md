@@ -3,7 +3,7 @@ Build a vagrant box with miniconda for testing and developing python packages on
 
 ## usage
 
-   1. ensure that you have vagrant installled and working
+   1. ensure that you have [vagrant](https://www.vagrantup.com/) installled and working
 
    2. download miniconda: `./get-conda`
 

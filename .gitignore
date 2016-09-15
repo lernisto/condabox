@@ -90,3 +90,4 @@ ENV/
 
 # don't checkin the conda installer: get-conda will retrieve it
 Miniconda3-latest-Linux-x86_64.sh
+.vagrant/
